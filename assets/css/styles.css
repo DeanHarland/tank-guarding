@@ -1,11 +1,26 @@
+body{
+    /* background-color: #ADEBB3; */
+    /* background-color: #baaf43; */
+    background-color: #c7ba4e;
+}
+
+
 .tank-hero-img {
   max-height: 60vh;
   width: auto;
 }
 
-/* #hero-img{
-    max-height: 80vh !important;
-} */
+.tip-col {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+  margin-right: -30px; /* tweak overlap */
+}
+
+
+
 
 @media (max-width: 768px) {
   .tank-hero-img {

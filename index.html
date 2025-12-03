@@ -16,6 +16,9 @@
 
 <body>
 
+
+
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container">
@@ -68,7 +71,50 @@
     </div>
 
     <!-- Key Info/Gird Section -->
+    <!-- Tips Section -->
+    <div class="container my-5">
+        <div class="row align-items-center mb-4">
 
+            <!-- Tip Column 1: Maintaining Aggro -->
+            <div id="tip1" class="col-8 tip-col bg-light p-4 rounded shadow position-relative"
+                style="z-index: 2; margin-right: -40px;">
+                <h3>Maintaining Aggro</h3>
+                <ul>
+                    <li>Keep enemy attention on yourself at all times.</li>
+                    <li>Use threat-generating abilities regularly.</li>
+                    <li>Position enemies to protect your teammates.</li>
+                </ul>
+            </div>
+
+            <!-- Image Column 1 -->
+            <div class="col-4">
+                <img id="tip-img-1" src="./assets/images/knight.png" class="img-fluid rounded shadow"
+                    alt="Tank holding aggro">
+            </div>
+
+        </div>
+
+        <div class="row align-items-center mb-4">
+            <!-- Image Column 2 -->
+            <div class="col-4">
+                <img id="tip-img-2" src="./assets/images/knight.png" class="img-fluid rounded shadow"
+                    alt="Tank using defensive skills">
+            </div>
+            <!-- Tip Column 2: Using Defensives -->
+            <div id="tip2" class="col-8 tip-col bg-light p-4 rounded shadow position-relative"
+                style="z-index: 2; margin-left: -40px;">
+                <h3>Using Defensives</h3>
+                <ul>
+                    <li>Use cooldowns to mitigate incoming damage.</li>
+                    <li>Monitor your health and defensive resources.</li>
+                    <li>Coordinate with teammates to survive high-damage phases.</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
 
     <!-- Bullet Points Section -->
 
@@ -87,40 +133,7 @@
 
 
     <!-- JS -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const heroImage = document.getElementById("hero-img");
-
-            const normalImage = "./assets/images/knight.png";
-            const flashImage = "./assets/images/knightwave.png"; // the image to show temporarily
-
-            // Automatically swap 1 second after page load
-            setTimeout(function () {
-                heroImage.src = flashImage;
-
-                setTimeout(function () {
-                    heroImage.src = normalImage;
-                }, 1000); // revert after 1 second
-            }, 1000); // initial delay after page load
-        });
-    </script>
-    <!-- Attack button functionality -->
-    <script>
-        const attackButton = document.getElementById("attack-button");
-        const heroImage = document.getElementById("hero-img");
-
-        const normalImage = "./assets/images/knight.png";
-        const attackImage = "./assets/images/knightattacked.png";
-
-        attackButton.addEventListener("click", function () {
-            heroImage.src = attackImage;
-
-            setTimeout(function () {
-                heroImage.src = normalImage;
-            }, 1000); // 1 second delay
-        });
-    </script>
-
+    <script src="./assets/scripts/script.js"></script>
     <!-- JS Bootstrap link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
