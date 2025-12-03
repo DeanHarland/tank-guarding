@@ -1,32 +1,86 @@
-
-
 body {
     /* Background image */
-    background-image: url('../images/background.png'); /* replace with your image */
-    background-color: #c7ba4e; /* fallback color */
-    background-size: cover;       /* ensures it covers the entire viewport */
-    background-position: center;  /* centers the image */
-    background-repeat: no-repeat; /* prevents tiling */
-    background-attachment: fixed; /* keeps the image fixed while scrolling */
+    background-image: url('../images/background.png');
+    /* replace with your image */
+    background-color: #c7ba4e;
+    /* fallback color */
+    background-size: cover;
+    /* ensures it covers the entire viewport */
+    background-position: center;
+    /* centers the image */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    background-attachment: fixed;
+    /* keeps the image fixed while scrolling */
 
     /* Optional: overlay color to make text readable */
     position: relative;
     /* color: #fff; default text color if needed */
+
+    font-family: "Times New Roman", Times, serif;
+    /* Example font */
+    font-family: georgia, serif;
+}
+
+/* Navigation  */
+.navbar-custom {
+    background-image: url('../images/decocloudsnav2.png'); /* your image path */
+    background-size: cover;    /* ensures the full image height is always visible */
+    background-position: top;    /* aligns the image to the top of the navbar */
+    background-repeat: no-repeat; /* prevent tiling */
+    color: #fff;
+    min-height: 151px;            /* adjust to your image height */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: black;                  /* make links and brand visible on the image */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffd700;               /* optional hover color */
+}
+
+
+
+/* Hero Section */
+#hero-section{
+    background-image: url("../images/herobackground.png");
+        background-size: cover;       /* makes the image cover the entire hero */
+    background-position: center;  /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling/repeating */
+    position: relative;   
 }
 
 .tank-hero-img {
-  max-height: 60vh;
-  width: auto;
+    max-height: 60vh;
+    width: auto;
+}
+.hero-overlay-container {
+    position: absolute;
+    bottom: 0;       /* sticks it to the bottom of hero section */
+    left: 0;         /* align to left */
+    width: 100%;     /* full width */
+    text-align: center;
+    z-index: 1;
+    margin-bottom: -50px;
+}
+
+.hero-overlay-img {
+    width: 100%;
+    height: 280px;        /* fixed pixel height */
+    max-height: none;     /* remove scaling limitation */
+    object-fit: cover;    /* still cover full width without stretching */
 }
 
 .tip-col {
-     min-height: 450px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 2;
-  margin-right: -30px;
-  background-color: transparent;
+    min-height: 450px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+    position: relative;
+    z-index: 2;
+    margin-right: -30px;
+    background-color: transparent;
 }
 
 .scroll-bg {
@@ -35,28 +89,92 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    padding: 3rem 4rem;   /* Creates space inside the scroll */
-    border-radius: 20px; /* Soft rounded parchment look */
+    padding: 2rem 2rem;
+    /* Creates space inside the scroll */
+    border-radius: 20px;
+    /* Soft rounded parchment look */
     position: relative;
 
     /* Optional: makes text more readable */
     color: #2b1b0f;
 }
 
-#tip1, #tip2 {
-    display: flex;              /* enables flexbox */
-    flex-direction: column;     /* stack heading and list vertically */
-    justify-content: center;    /* centers content vertically */
-    align-items: center;        /* centers content horizontally */
-    text-align: center;         /* makes text centered inside block */
-    height: 100%;               /* optional, ensures it fills parent */
+#tip1,
+#tip2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    /* min 0.9rem, max 1.2rem, scales with viewport */
 }
-#tip1 ul, #tip2 ul{
+
+#tip1 h3,
+#tip2 h3 {}
+
+#tip1 ul,
+#tip2 ul {
     list-style: none;
 }
 
 @media (max-width: 768px) {
-  .tank-hero-img {
-    max-height: 25vh;
-  }
+    .tank-hero-img {
+        max-height: 25vh;
+    }
+
+    .scroll-bg {
+        padding: 1rem 1rem;
+        /* reduces padding for mobile */
+    }
+
+}
+
+/* Hero Section */
+@media (max-width: 992px) {
+    .p-5.mb-4 {
+        padding: 3rem 1rem;
+    }
+
+    /* Make hero section stack vertically */
+    .hero-row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-row .col-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    /* Reduce image size for smaller screens */
+    .tank-hero-img {
+        max-height: 35vh;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Buttons spacing */
+    #attack-button, #defend-button {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .p-5.mb-4 {
+        padding: 2rem 1rem;
+    }
+
+    h1.display-5 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p.fs-4 {
+        font-size: 1rem;
+    }
 }
