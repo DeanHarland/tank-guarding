@@ -1,0 +1,14 @@
+.tank-hero-img {
+  max-height: 60vh;
+  width: auto;
+}
+
+/* #hero-img{
+    max-height: 80vh !important;
+} */
+
+@media (max-width: 768px) {
+  .tank-hero-img {
+    max-height: 25vh;
+  }
+}
