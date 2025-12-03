@@ -1,9 +1,18 @@
-body{
-    /* background-color: #ADEBB3; */
-    /* background-color: #baaf43; */
-    background-color: #c7ba4e;
-}
 
+
+body {
+    /* Background image */
+    background-image: url('../images/background.png'); /* replace with your image */
+    background-color: #c7ba4e; /* fallback color */
+    background-size: cover;       /* ensures it covers the entire viewport */
+    background-position: center;  /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-attachment: fixed; /* keeps the image fixed while scrolling */
+
+    /* Optional: overlay color to make text readable */
+    position: relative;
+    /* color: #fff; default text color if needed */
+}
 
 .tank-hero-img {
   max-height: 60vh;
@@ -11,16 +20,40 @@ body{
 }
 
 .tip-col {
-  background-color: #f8f9fa;
+     min-height: 450px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   position: relative;
   z-index: 2;
-  margin-right: -30px; /* tweak overlap */
+  margin-right: -30px;
+  background-color: transparent;
 }
 
+.scroll-bg {
+    background-image: url("../images/scroll1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
+    padding: 3rem 4rem;   /* Creates space inside the scroll */
+    border-radius: 20px; /* Soft rounded parchment look */
+    position: relative;
 
+    /* Optional: makes text more readable */
+    color: #2b1b0f;
+}
+
+#tip1, #tip2 {
+    display: flex;              /* enables flexbox */
+    flex-direction: column;     /* stack heading and list vertically */
+    justify-content: center;    /* centers content vertically */
+    align-items: center;        /* centers content horizontally */
+    text-align: center;         /* makes text centered inside block */
+    height: 100%;               /* optional, ensures it fills parent */
+}
+#tip1 ul, #tip2 ul{
+    list-style: none;
+}
 
 @media (max-width: 768px) {
   .tank-hero-img {
