@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const heroImage = document.getElementById("hero-img");
 
     const normalImage = "./assets/images/knight.avif";
-    const flashImage = "./assets/images/knightwave.avif"; // the image to show temporarily
+    const flashImage = "./assets/images/knightwave.avif"; 
 
     // Automatically swap 1 second after page load
     setTimeout(function () {
@@ -44,11 +44,11 @@ attackButton.addEventListener("click", function () {
     }, 1000); // 1 second delay
     setTimeout(function () {
         heroImage.style.paddingLeft = "150px";
-    }, 2000); // 1 second delay
+    }, 2000); // 2 second delay
     
     setTimeout(function () {
         heroImage.src = cryknightImage;
-    }, 2000); // 1 second delay
+    }, 2000); // 2 second delay
         
 
 });
