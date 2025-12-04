@@ -111,13 +111,41 @@ body {
     /* min 0.9rem, max 1.2rem, scales with viewport */
 }
 
-#tip1 h3,
-#tip2 h3 {}
-
 #tip1 ul,
 #tip2 ul {
     list-style: none;
 }
+
+/* Underground */
+#underground {
+    background-image: url("../images/bottombackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    min-height: 400px;
+    padding: 4rem 0;
+    margin-top: -60px;
+}  
+
+.ground-overlay-container {
+    position: relative;
+    width: 100%;
+    height: 160px;          /* controls how TALL the strip is */
+    /* margin-top: 20px;    pulls it up between sections */
+    z-index: 5;
+    pointer-events: none;
+
+    background-image: url("../images/decoground2.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;  /* ✅ FULL HEIGHT, scaled smaller */
+    background-position: center;
+}
+
+
+
+
 
 @media (max-width: 768px) {
     .tank-hero-img {
