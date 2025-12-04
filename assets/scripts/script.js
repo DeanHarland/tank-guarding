@@ -2,8 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const heroImage = document.getElementById("hero-img");
 
-    const normalImage = "./assets/images/knight.png";
-    const flashImage = "./assets/images/knightwave.png"; // the image to show temporarily
+    const normalImage = "./assets/images/knight.avif";
+    const flashImage = "./assets/images/knightwave.avif"; // the image to show temporarily
 
     // Automatically swap 1 second after page load
     setTimeout(function () {
@@ -20,9 +20,9 @@ const attackButton = document.getElementById("attack-button");
 const defendButton = document.getElementById("defend-button");
 const heroImage = document.getElementById("hero-img");
 
-const normalImage = "./assets/images/knight.png";
-const attackImage = "./assets/images/knightattacked.png";
-const blockImage = "./assets/images/knightblock.png";
+const normalImage = "./assets/images/knight.avif";
+const attackImage = "./assets/images/knightattacked.avif";
+const blockImage = "./assets/images/knightblock.avif";
 
 defendButton.addEventListener("click", function () {
     heroImage.src = blockImage;
@@ -62,5 +62,5 @@ function setupHoverSwap(tipId, imgId, img1Src, img2Src) {
 }
 
 // Setup hover swapping for each tip
-setupHoverSwap('tip1', 'tip-img-1', './assets/images/knight.png', './assets/images/knightshout.png');
-setupHoverSwap('tip2', 'tip-img-2', './assets/images/knight1.png', './assets/images/knightblock.png');
+setupHoverSwap('tip1', 'tip-img-1', './assets/images/knight.avif', './assets/images/knightshout.avif');
+setupHoverSwap('tip2', 'tip-img-2', './assets/images/knight1.avif', './assets/images/knightblock.avif');

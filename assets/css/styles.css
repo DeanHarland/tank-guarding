@@ -1,6 +1,6 @@
 body {
     /* Background image */
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.avif');
     /* replace with your image */
     background-color: #c7ba4e;
     /* fallback color */
@@ -26,7 +26,7 @@ body {
 
 /* Navigation  */
 .navbar-custom {
-    background-image: url('../images/decocloudsnav2.png'); /* your image path */
+    background-image: url('../images/decocloudsnav2.avif'); /* your image path */
     background-size: cover;    /* ensures the full image height is always visible */
     background-position: top;    /* aligns the image to the top of the navbar */
     background-repeat: no-repeat; /* prevent tiling */
@@ -47,7 +47,7 @@ body {
 
 /* Hero Section */
 #hero-section{
-    background-image: url("../images/herobackground.png");
+    background-image: url("../images/herobackground.avif");
         background-size: cover;       /* makes the image cover the entire hero */
     background-position: center;  /* centers the image */
     background-repeat: no-repeat; /* prevents tiling/repeating */
@@ -94,7 +94,7 @@ body {
 }
 
 .scroll-bg {
-    background-image: url("../images/scroll1.png");
+    background-image: url("../images/scroll1.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -109,7 +109,7 @@ body {
     color: #2b1b0f;
 }
 .scroll-bg2{
-    background-image: url("../images/scroll3.png");
+    background-image: url("../images/scroll3.avif");
 }
 #tip1,
 #tip2 {
@@ -136,7 +136,7 @@ body {
 
 /* Underground */
 #underground {
-    background-image: url("../images/bottombackground.png");
+    background-image: url("../images/bottombackground.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body {
     z-index: 5;
     pointer-events: none;
 
-    background-image: url("../images/decoground2.png");
+    background-image: url("../images/decoground2.avif");
     background-repeat: repeat-x;
     background-size: auto 100%;  /* ✅ FULL HEIGHT, scaled smaller */
     background-position: center;
@@ -166,7 +166,7 @@ body {
 }
 
 #footerfooter{
-    background-image: url("../images/undergrounddeco1.png");
+    background-image: url("../images/undergrounddeco1.avif");
     background-size: auto 100%;
     background-position: center;
     background-repeat: repeat-x;
