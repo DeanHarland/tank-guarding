@@ -1,11 +1,11 @@
-# Tanking Fundamentals – A Beginner’s Guide
+# Tankguarding (Safeguarding)
 
 ## Project Overview
 This project is a one-page educational website designed to clearly explain the fundamentals of **Tanking** in team-based games. The site mirrors the structure and purpose of a safeguarding information site by focusing on **protection, responsibility, awareness, and correct response** within a team environment.
 
 Just as safeguarding is about protecting vulnerable people, **Tanking is about protecting teammates**, controlling threats, and creating a safe environment for the rest of the team to succeed.
 
-The website is built using **HTML, CSS, and Bootstrap**, and follows accessibility, user experience, and responsive design principles.
+The website is built using **HTML, CSS,Bootstrap, and JS**, and follows accessibility, user experience, and responsive design principles.
 
 ---
 
@@ -34,7 +34,6 @@ The site owner aims to deliver **a straightforward, structured, and intuitive on
 - **What Is a Tank?:** Explains the role in clear, simple terms
 - **Core Responsibilities:** Outlines the Tank’s duty to control enemies and protect allies
 - **Action Steps:** Bullet-pointed guidance on how to react during combat
-- **Contact / Resources:** A simple section for feedback or learning resources
 
 ---
 
@@ -92,11 +91,15 @@ Each screenshot demonstrates how the site delivers **clear, structured, and acce
 
 ## Use of AI in Development (LO5)
 
-
+- Code Creation: AI helped generate reusable Bootstrap card structures and hero section layouts, saving time.
+- Debugging: Assisted in identifying responsive issues and HTML/CSS syntax errors.
+- Performance & UX Optimization: AI suggested efficient class usage and responsive design improvements to enhance accessibility and mobile experience.
+- Workflow Impact: AI tools improved productivity, helping focus on content and UX while reducing repetitive coding tasks.
+- Questions: AI helped to generate answers to questions I had regrading problems in the project.
 
 ---
 ## Planning/Wireframe
-![Wireframe for tank guarding porject](./assets/images/tankguardingwireframe.png)
+![Wireframe for tank guarding porject](./assets/images/tankguardingwireframe.avif)
 
 ---
 
