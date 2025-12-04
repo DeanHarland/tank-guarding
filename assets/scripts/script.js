@@ -25,9 +25,11 @@ const normalImage = "./assets/images/knight.avif";
 const attackImage = "./assets/images/knightattacked.avif";
 const blockImage = "./assets/images/knightblock.avif";
 const sadknightImage = "./assets/images/knightsad.avif";
+const cryknightImage = "./assets/images/knightcry.avif";
 
 defendButton.addEventListener("click", function () {
     heroImage.src = blockImage;
+    heroImage.style.paddingLeft = "0px";
 
     setTimeout(function () {
         heroImage.src = normalImage;
@@ -40,6 +42,15 @@ attackButton.addEventListener("click", function () {
     setTimeout(function () {
         heroImage.src = sadknightImage;
     }, 1000); // 1 second delay
+    setTimeout(function () {
+        heroImage.style.paddingLeft = "150px";
+    }, 2000); // 1 second delay
+    
+    setTimeout(function () {
+        heroImage.src = cryknightImage;
+    }, 2000); // 1 second delay
+        
+
 });
 
 // Function to handle image swapping
