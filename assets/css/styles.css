@@ -280,60 +280,13 @@ body {
     margin-top: -40px;
     color: wheat;
 }
-
-@media (max-width: 576px) {
-    .p-5.mb-4 {
-        padding: 2rem 1rem;
-    }
-
-    h1.display-5 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    p.fs-4 {
-        font-size: 1rem;
-    }
-    #underground li{
-        font-size: 0.60rem !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .tank-hero-img {
-        max-height: 25vh;
-    }
-
-    .scroll-bg {
-        padding: 1rem 1rem;
-        /* reduces padding for mobile */
-    }
-
-    #underground .list-group-item {
-        font-size: 0.9rem;
-        padding: 0.8rem 1rem;
-    }
-
-    #underground .list-group-item::before {
-        font-size: 1rem;
-    }
-
-    #tip1 ul li,
-    #tip2 ul li {
-        line-height: 1.35;
-        margin-bottom: 0.4rem;
-    }
-
+@media (max-width: 1400px) {
     #tip1,
     #tip2 {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 }
 
-/* Hero Section */
 @media (max-width: 992px) {
     .p-5.mb-4 {
         padding: 3rem 1rem;
@@ -364,6 +317,63 @@ body {
     }
     #underground li{
         font-size: 0.70rem !important;
+    }
+     #tip1,
+    #tip2 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tank-hero-img {
+        max-height: 25vh;
+    }
+
+    .scroll-bg {
+        padding: 1rem 1rem;
+        /* reduces padding for mobile */
+    }
+
+    #underground .list-group-item {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+
+    #underground .list-group-item::before {
+        font-size: 1rem;
+    }
+
+    #tip1 ul li,
+    #tip2 ul li {
+        line-height: 1.35;
+        margin-bottom: 0.4rem;
+    }
+
+    #tip1,
+    #tip2 {
+        font-size: 0.65rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .p-5.mb-4 {
+        padding: 2rem 1rem;
+    }
+
+    h1.display-5 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p.fs-4 {
+        font-size: 1rem;
+    }
+    #underground li{
+        font-size: 0.60rem !important;
     }
 }
 
