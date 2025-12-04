@@ -20,9 +20,11 @@ const attackButton = document.getElementById("attack-button");
 const defendButton = document.getElementById("defend-button");
 const heroImage = document.getElementById("hero-img");
 
+
 const normalImage = "./assets/images/knight.avif";
 const attackImage = "./assets/images/knightattacked.avif";
 const blockImage = "./assets/images/knightblock.avif";
+const sadknightImage = "./assets/images/knightsad.avif";
 
 defendButton.addEventListener("click", function () {
     heroImage.src = blockImage;
@@ -36,7 +38,7 @@ attackButton.addEventListener("click", function () {
     heroImage.src = attackImage;
 
     setTimeout(function () {
-        heroImage.src = normalImage;
+        heroImage.src = sadknightImage;
     }, 1000); // 1 second delay
 });
 

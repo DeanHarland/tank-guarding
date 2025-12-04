@@ -78,7 +78,6 @@ body {
 #hero-text-side{
     z-index: 2;
     text-align: left;
-    align-items: right;
     align-content: center;
     font-weight: bold;
 }
@@ -165,6 +164,68 @@ body {
     color: #fff;
 }
 
+/* Medieval Scroll Style for Bullet Points Section */
+#underground .list-group-item {
+    background-color: transparent; /* keep scroll background visible */
+    border: none;                  /* remove default Bootstrap borders */
+    margin: 0.5rem 0;              /* spacing between items */
+    padding: 1rem 1.5rem;          /* nice padding for scroll feel */
+    font-family: 'Cinzel', serif;  /* medieval font */
+    font-weight: 700;
+    color: #2b1b0f;                /* dark brown text for parchment look */
+    text-shadow: 1px 1px 2px #00000070; /* slight shadow for depth */
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Adding parchment background for list items */
+#underground .list-group-item-success {
+    background-image: url("../images/scroll1.avif"); /* parchment texture */
+    background-size: cover;
+    background-position: center;
+    color: #2b1b0f; /* brown text */
+}
+
+#underground .list-group-item-danger {
+    background-image: url("../images/scroll3.avif"); /* darker/more ominous scroll */
+    background-size: cover;
+    background-position: center;
+    color: #5a0f0f; /* dark red text */
+}
+
+/* Add decorative bullet effect */
+#underground .list-group-item::before {
+    content: ""; /*bullet points */
+    margin-right: 0.5rem;
+    color: gold;
+    font-size: 1.2rem;
+}
+
+/* Medieval Style for List Headers in Underground Section */
+#underground h3 {
+    font-family: 'Cinzel', serif;   /* medieval font */
+    font-weight: 900;               /* bold & prominent */
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #48f43f;                 /* golden medieval tone */
+    text-shadow: 
+        2px 2px 4px #00000080,     /* dark shadow for depth */
+        0 0 5px #ffd70080;         /* subtle golden glow */
+    background-image: url("../images/scrollheader.avif"); /* small parchment strip */
+    background-size: cover;
+    background-position: center;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    display: inline-block;          /* shrink background to content */
+    margin-bottom: 1.5rem;
+    border: 2px solid #b8860b;     /* optional antique border */
+}
+#dontdostyle{
+    color: red !important;
+}
+
+
+
 #footerfooter{
     background-image: url("../images/undergrounddeco1.avif");
     background-size: auto 100%;
@@ -186,6 +247,14 @@ body {
         /* reduces padding for mobile */
     }
 
+        #underground .list-group-item {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+
+    #underground .list-group-item::before {
+        font-size: 1rem;
+    }
 }
 
 /* Hero Section */
