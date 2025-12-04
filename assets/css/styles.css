@@ -18,7 +18,7 @@ body {
     /* color: #fff; default text color if needed */
 
     font-family: 'Cinzel', serif;
-    font-weight: 300;    
+    font-weight: 300;
     /* font-family: "Times New Roman", Times, serif; */
     /* Example font */
     /* font-family: georgia, serif; */
@@ -26,44 +26,56 @@ body {
 
 /* Navigation  */
 .navbar-custom {
-    background-image: url('../images/decocloudsnav2.avif'); /* your image path */
-    background-size: cover;    /* ensures the full image height is always visible */
-    background-position: top;    /* aligns the image to the top of the navbar */
-    background-repeat: no-repeat; /* prevent tiling */
+    background-image: url('../images/decocloudsnav2.avif');
+    /* your image path */
+    background-size: cover;
+    /* ensures the full image height is always visible */
+    background-position: top;
+    /* aligns the image to the top of the navbar */
+    background-repeat: no-repeat;
+    /* prevent tiling */
     color: #fff;
-    min-height: 151px;            /* adjust to your image height */
+    min-height: 151px;
+    /* adjust to your image height */
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: black;                  /* make links and brand visible on the image */
+    color: black;
+    /* make links and brand visible on the image */
 }
 
 .navbar-custom .nav-link:hover {
-    color: red ;               /* optional hover color */
+    color: red;
+    /* optional hover color */
 }
 
 
 
 /* Hero Section */
-#hero-section{
+#hero-section {
     background-image: url("../images/herobackground.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;  /* ✅ THIS enables fixed scrolling */
-    position: relative;   
+    background-attachment: fixed;
+    /* ✅ THIS enables fixed scrolling */
+    position: relative;
 }
 
 .tank-hero-img {
     max-height: 60vh;
     width: auto;
 }
+
 .hero-overlay-container {
     position: absolute;
-    bottom: 0;       /* sticks it to the bottom of hero section */
-    left: 0;         /* align to left */
-    width: 100%;     /* full width */
+    bottom: 0;
+    /* sticks it to the bottom of hero section */
+    left: 0;
+    /* align to left */
+    width: 100%;
+    /* full width */
     text-align: center;
     z-index: 1;
     margin-bottom: -50px;
@@ -71,12 +83,15 @@ body {
 
 .hero-overlay-img {
     width: 100%;
-    height: 280px;        /* fixed pixel height */
-    max-height: none;     /* remove scaling limitation */
-    object-fit: cover;    /* still cover full width without stretching */
+    height: 280px;
+    /* fixed pixel height */
+    max-height: none;
+    /* remove scaling limitation */
+    object-fit: cover;
+    /* still cover full width without stretching */
 }
 
-#hero-text-side{
+#hero-text-side {
     z-index: 2;
     text-align: left;
     align-content: center;
@@ -108,9 +123,11 @@ body {
     /* Optional: makes text more readable */
     color: #2b1b0f;
 }
-.scroll-bg2{
+
+.scroll-bg2 {
     background-image: url("../images/scroll3.avif");
 }
+
 #tip1,
 #tip2 {
     display: flex;
@@ -123,10 +140,12 @@ body {
     font-weight: bold;
     /* min 0.9rem, max 1.2rem, scales with viewport */
 }
+
 #tip1 h3,
 #tip2 h3 {
- font-weight: bold;
+    font-weight: bold;
 }
+
 #tip1 ul,
 #tip2 ul {
     list-style: none;
@@ -145,36 +164,46 @@ body {
     min-height: 400px;
     padding: 4rem 0;
     margin-top: -60px;
-}  
+}
 
 .ground-overlay-container {
     position: relative;
     width: 100%;
-    height: 160px;          /* controls how TALL the strip is */
+    height: 160px;
+    /* controls how TALL the strip is */
     /* margin-top: 20px;    pulls it up between sections */
     z-index: 5;
     pointer-events: none;
 
     background-image: url("../images/decoground2.avif");
     background-repeat: repeat-x;
-    background-size: auto 100%;  /* ✅ FULL HEIGHT, scaled smaller */
+    background-size: auto 100%;
+    /* ✅ FULL HEIGHT, scaled smaller */
     background-position: center;
 }
 
-#underground h3, #underground h3 {
+#underground h3,
+#underground h3 {
     color: #fff;
 }
 
 /* Medieval Scroll Style for Bullet Points Section */
 #underground .list-group-item {
-    background-color: transparent; /* keep scroll background visible */
-    border: none;                  /* remove default Bootstrap borders */
-    margin: 0.5rem 0;              /* spacing between items */
-    padding: 1rem 1.5rem;          /* nice padding for scroll feel */
-    font-family: 'Cinzel', serif;  /* medieval font */
+    background-color: transparent;
+    /* keep scroll background visible */
+    border: none;
+    /* remove default Bootstrap borders */
+    margin: 0.5rem 0;
+    /* spacing between items */
+    padding: 1rem 1.5rem;
+    /* nice padding for scroll feel */
+    font-family: 'Cinzel', serif;
+    /* medieval font */
     font-weight: 700;
-    color: #2b1b0f;                /* dark brown text for parchment look */
-    text-shadow: 1px 1px 2px #00000070; /* slight shadow for depth */
+    color: #2b1b0f;
+    /* dark brown text for parchment look */
+    text-shadow: 1px 1px 2px #00000070;
+    /* slight shadow for depth */
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -182,22 +211,27 @@ body {
 
 /* Adding parchment background for list items */
 #underground .list-group-item-success {
-    background-image: url("../images/scroll1.avif"); /* parchment texture */
+    background-image: url("../images/scroll1.avif");
+    /* parchment texture */
     background-size: cover;
     background-position: center;
-    color: #2b1b0f; /* brown text */
+    color: #2b1b0f;
+    /* brown text */
 }
 
 #underground .list-group-item-danger {
-    background-image: url("../images/scroll3.avif"); /* darker/more ominous scroll */
+    background-image: url("../images/scroll3.avif");
+    /* darker/more ominous scroll */
     background-size: cover;
     background-position: center;
-    color: #5a0f0f; /* dark red text */
+    color: #5a0f0f;
+    /* dark red text */
 }
 
 /* Add decorative bullet effect */
 #underground .list-group-item::before {
-    content: ""; /*bullet points */
+    content: "";
+    /*bullet points */
     margin-right: 0.5rem;
     color: gold;
     font-size: 1.2rem;
@@ -205,29 +239,38 @@ body {
 
 /* Medieval Style for List Headers in Underground Section */
 #underground h3 {
-    font-family: 'Cinzel', serif;   /* medieval font */
-    font-weight: 900;               /* bold & prominent */
+    font-family: 'Cinzel', serif;
+    /* medieval font */
+    font-weight: 900;
+    /* bold & prominent */
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    color: #48f43f;                 /* golden medieval tone */
-    text-shadow: 
-        2px 2px 4px #00000080,     /* dark shadow for depth */
-        0 0 5px #ffd70080;         /* subtle golden glow */
-    background-image: url("../images/scrollheader.avif"); /* small parchment strip */
+    color: #48f43f;
+    /* golden medieval tone */
+    text-shadow:
+        2px 2px 4px #00000080,
+        /* dark shadow for depth */
+        0 0 5px #ffd70080;
+    /* subtle golden glow */
+    background-image: url("../images/scrollheader.avif");
+    /* small parchment strip */
     background-size: cover;
     background-position: center;
     padding: 0.5rem 1rem;
     border-radius: 12px;
-    display: inline-block;          /* shrink background to content */
+    display: inline-block;
+    /* shrink background to content */
     margin-bottom: 1.5rem;
-    border: 2px solid #b8860b;     /* optional antique border */
+    border: 2px solid #b8860b;
+    /* optional antique border */
 }
-#dontdostyle{
+
+#dontdostyle {
     color: red !important;
 }
 
 
 
-#footerfooter{
+#footerfooter {
     background-image: url("../images/undergrounddeco1.avif");
     background-size: auto 100%;
     background-position: center;
@@ -254,6 +297,9 @@ body {
     p.fs-4 {
         font-size: 1rem;
     }
+    #underground li{
+        font-size: 0.60rem !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -266,13 +312,24 @@ body {
         /* reduces padding for mobile */
     }
 
-        #underground .list-group-item {
+    #underground .list-group-item {
         font-size: 0.9rem;
         padding: 0.8rem 1rem;
     }
 
     #underground .list-group-item::before {
         font-size: 1rem;
+    }
+
+    #tip1 ul li,
+    #tip2 ul li {
+        line-height: 1.35;
+        margin-bottom: 0.4rem;
+    }
+
+    #tip1,
+    #tip2 {
+        font-size: 0.85rem;
     }
 }
 
@@ -300,28 +357,33 @@ body {
     }
 
     /* Buttons spacing */
-    #attack-button, #defend-button {
+    #attack-button,
+    #defend-button {
         margin-bottom: 0.5rem;
         width: 100%;
+    }
+    #underground li{
+        font-size: 0.70rem !important;
     }
 }
 
 
 
 @media (min-width: 1200px) {
-  #hero-text-side h1 {
-    font-size: 4rem;      /* Bigger core headline */
-    letter-spacing: 1px;
-  }
+    #hero-text-side h1 {
+        font-size: 4rem;
+        /* Bigger core headline */
+        letter-spacing: 1px;
+    }
 
-  #hero-text-side h2 {
-    font-size: 2rem;
-    max-width: 90%;
-  }
+    #hero-text-side h2 {
+        font-size: 2rem;
+        max-width: 90%;
+    }
 
-  #hero-text-side p {
-    font-size: 1.25rem;
-    max-width: 85%;
-    line-height: 1.7;
-  }
+    #hero-text-side p {
+        font-size: 1.25rem;
+        max-width: 85%;
+        line-height: 1.7;
+    }
 }
